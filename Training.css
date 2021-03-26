@@ -1,0 +1,113 @@
+@@ -0,0 +1,116 @@
+/* 
+Primary Font: Quicksand
+Secondary Font: Roboto Condensed
+Light Blue-ish - rgb(3, 169, 252)
+Green-frog - rgb(3, 252, 11)
+*/
+/*keyframe*/
+.content {
+	animation-name: fade-in; 
+	animation-duration: 2s;	
+}
+/*keyframe*/
+.sidebar {
+	animation-name: fade-in;
+	animation-duration: 2s;
+}
+
+img {
+	width: 400px;
+	height: 200px;
+	transition: 0.5s all;
+}
+
+img:hover {
+	height: 250px;
+	width: 500px;
+}
+
+body {
+	background: rgba(3, 169, 252);
+}
+#main {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	grid-gap: 50px;
+	width: 100%;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+}
+
+li {
+	font-family: 'Quicksand', sans-serif;
+}
+
+a {
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sidebar {
+	background: rgb(3, 252, 11);
+	float:none ;
+}
+.subtitle {
+
+} 
+
+.image-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.image-grid > img {
+	margin: 10px;
+}
+
+#image-1 {
+	float: right;
+	margin: 15px;
+	height: 300px;
+}
+
+.post {
+	border: 2px solid rgb(229, 158, 66);
+	margin: 10px;
+}
+
+.post-title {
+	margin-left: 5px;
+}
+
+.post-text {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.post > a {
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none;
+	color:red;
+	transition: 0.5s color;
+}
+
+.post > a:hover {
+	color: rgb(186, 212, 255);
+}
+
+@keyframes fade-in {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
